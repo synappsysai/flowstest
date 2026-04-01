@@ -1,0 +1,11 @@
+{
+  "projects": [
+    {
+      "slug": "devproject",
+      "name": "devproject",
+      "branch": "main",
+      "type": "development",
+      "registeredAt": "2026-04-01T23:00:08.667Z"
+    }
+  ]
+}

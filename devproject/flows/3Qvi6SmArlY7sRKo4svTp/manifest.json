@@ -3,6 +3,7 @@
   "externalId": "3Qvi6SmArlY7sRKo4svTp",
   "webhookAlias": "aitest",
   "versions": [
-    "1.9"
+    "1.9",
+    "1.10"
   ]
 }

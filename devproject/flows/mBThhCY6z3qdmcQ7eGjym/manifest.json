@@ -1,9 +1,10 @@
 {
   "displayName": "flow1",
   "externalId": "mBThhCY6z3qdmcQ7eGjym",
-  "webhookAlias": "test",
+  "webhookAlias": null,
   "versions": [
     "1.4",
-    "1.0"
+    "1.0",
+    "1.1"
   ]
 }

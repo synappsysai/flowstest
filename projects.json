@@ -1,0 +1,11 @@
+{
+  "projects": [
+    {
+      "slug": "dev-s-project",
+      "name": "dev-s-project",
+      "branch": "staging",
+      "type": "development",
+      "registeredAt": "2026-04-02T22:18:50.220Z"
+    }
+  ]
+}

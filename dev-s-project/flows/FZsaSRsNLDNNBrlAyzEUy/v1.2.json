@@ -1,0 +1,149 @@
+{
+  "displayName": "Untitled",
+  "trigger": {
+    "name": "trigger",
+    "type": "PIECE_TRIGGER",
+    "valid": true,
+    "settings": {
+      "input": {
+        "authType": "none",
+        "authFields": {},
+        "liveMarkdown": "",
+        "syncMarkdown": "",
+        "testMarkdown": "",
+        "timeoutSeconds": "5",
+        "allowCallerTimeout": true
+      },
+      "pieceName": "@synappsys/piece-webhook",
+      "sampleData": {},
+      "triggerName": "catch_webhook",
+      "pieceVersion": "0.2.0",
+      "propertySettings": {
+        "authType": {
+          "type": "MANUAL"
+        },
+        "authFields": {
+          "type": "MANUAL",
+          "schema": {}
+        },
+        "liveMarkdown": {
+          "type": "MANUAL"
+        },
+        "syncMarkdown": {
+          "type": "MANUAL"
+        },
+        "testMarkdown": {
+          "type": "MANUAL"
+        },
+        "timeoutSeconds": {
+          "type": "MANUAL"
+        },
+        "allowCallerTimeout": {
+          "type": "MANUAL"
+        }
+      }
+    },
+    "nextAction": {
+      "name": "step_1",
+      "skip": false,
+      "type": "PIECE",
+      "valid": true,
+      "settings": {
+        "input": {
+          "unit": "seconds",
+          "delayFor": "10",
+          "markdown": ""
+        },
+        "pieceName": "@activepieces/piece-delay",
+        "actionName": "delayFor",
+        "sampleData": {},
+        "pieceVersion": "0.3.25",
+        "propertySettings": {
+          "unit": {
+            "type": "MANUAL"
+          },
+          "delayFor": {
+            "type": "MANUAL"
+          },
+          "markdown": {
+            "type": "MANUAL"
+          }
+        },
+        "errorHandlingOptions": {
+          "retryOnFailure": {
+            "value": false
+          },
+          "continueOnFailure": {
+            "value": false
+          }
+        }
+      },
+      "nextAction": {
+        "name": "step_2",
+        "skip": false,
+        "type": "PIECE",
+        "valid": true,
+        "settings": {
+          "input": {
+            "fields": {
+              "body": {},
+              "status": 200,
+              "headers": {}
+            },
+            "respond": "stop",
+            "responseType": "json"
+          },
+          "pieceName": "@synappsys/piece-webhook",
+          "actionName": "return_response",
+          "sampleData": {},
+          "pieceVersion": "0.2.0",
+          "propertySettings": {
+            "fields": {
+              "type": "MANUAL",
+              "schema": {
+                "body": {
+                  "type": "JSON",
+                  "required": true,
+                  "displayName": "JSON Body"
+                },
+                "status": {
+                  "type": "NUMBER",
+                  "required": false,
+                  "displayName": "Status",
+                  "defaultValue": 200
+                },
+                "headers": {
+                  "type": "OBJECT",
+                  "required": false,
+                  "displayName": "Headers"
+                }
+              }
+            },
+            "respond": {
+              "type": "MANUAL"
+            },
+            "responseType": {
+              "type": "MANUAL"
+            }
+          },
+          "errorHandlingOptions": {
+            "retryOnFailure": {
+              "value": false
+            },
+            "continueOnFailure": {
+              "value": false
+            }
+          }
+        },
+        "displayName": "Return Response"
+      },
+      "displayName": "Delay For"
+    },
+    "displayName": "Catch Webhook"
+  },
+  "schemaVersion": "16",
+  "notes": [],
+  "versionLabel": "1.2",
+  "externalId": "FZsaSRsNLDNNBrlAyzEUy",
+  "webhookAlias": "test"
+}

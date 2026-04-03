@@ -1,8 +1,9 @@
 {
   "displayName": "Untitled",
   "externalId": "FZsaSRsNLDNNBrlAyzEUy",
-  "webhookAlias": null,
+  "webhookAlias": "test",
   "versions": [
-    "1.0"
+    "1.0",
+    "1.1"
   ]
 }

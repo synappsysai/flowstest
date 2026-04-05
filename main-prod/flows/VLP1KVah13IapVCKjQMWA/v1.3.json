@@ -1,0 +1,77 @@
+{
+  "displayName": "Untitled",
+  "trigger": {
+    "name": "trigger",
+    "type": "PIECE_TRIGGER",
+    "valid": true,
+    "settings": {
+      "input": {
+        "authType": "none",
+        "authFields": {},
+        "liveMarkdown": "",
+        "syncMarkdown": "",
+        "testMarkdown": "",
+        "timeoutSeconds": "",
+        "allowCallerTimeout": false
+      },
+      "pieceName": "@synappsys/piece-webhook",
+      "sampleData": {},
+      "triggerName": "catch_webhook",
+      "pieceVersion": "0.2.0",
+      "propertySettings": {
+        "authType": {
+          "type": "MANUAL"
+        },
+        "authFields": {
+          "type": "MANUAL",
+          "schema": {}
+        },
+        "liveMarkdown": {
+          "type": "MANUAL"
+        },
+        "syncMarkdown": {
+          "type": "MANUAL"
+        },
+        "testMarkdown": {
+          "type": "MANUAL"
+        },
+        "timeoutSeconds": {
+          "type": "MANUAL"
+        },
+        "allowCallerTimeout": {
+          "type": "MANUAL"
+        }
+      }
+    },
+    "nextAction": {
+      "name": "step_1",
+      "skip": false,
+      "type": "CODE",
+      "valid": true,
+      "settings": {
+        "input": {},
+        "sampleData": {},
+        "sourceCode": {
+          "code": "export const code = async (inputs) => {\n  return true;\n};",
+          "packageJson": "{}"
+        },
+        "errorHandlingOptions": {
+          "retryOnFailure": {
+            "value": false
+          },
+          "continueOnFailure": {
+            "value": false
+          }
+        }
+      },
+      "displayName": "Code"
+    },
+    "displayName": "Catch Webhook"
+  },
+  "schemaVersion": "16",
+  "notes": [],
+  "versionLabel": "1.3",
+  "externalId": "VLP1KVah13IapVCKjQMWA",
+  "webhookAlias": null,
+  "folderName": null
+}

@@ -9,8 +9,8 @@
   "type": "upsert",
   "requestedBy": "dev@ap.com",
   "requestedAt": "2026-04-05T03:46:47.892Z",
-  "status": "pending",
-  "reviewedBy": null,
-  "reviewedAt": null,
+  "status": "approved",
+  "reviewedBy": "dev@ap.com",
+  "reviewedAt": "2026-04-05T03:47:07.901Z",
   "reviewNote": null
 }
